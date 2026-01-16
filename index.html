@@ -4,15 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>LunaTWolf — Profile</title>
+
+  <!-- Put your GitHub username here; script.js will read this -->
+  <meta name="gh-username" content="LunaTWolf" />
+  <!-- Optional: add a token here if you need higher rate limits or private data.
+       Do NOT commit a personal token to public repos. Instead inject it at build time or via Actions secrets.
+  <meta name="gh-token" content="" />
+  -->
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <img id="avatar" alt="avatar" />
+    <img id="avatar" alt="avatar" src="" />
     <div class="intro">
       <h1 id="name">LunaTWolf</h1>
       <p id="bio">Frontend developer, open-source tinkerer.</p>
-      <div id="social" class="social-links"></div>
+      <div id="social" class="social-links" aria-label="social links"></div>
     </div>
   </header>
 
@@ -29,7 +37,7 @@
 
     <section id="github-activity" class="panel">
       <h2>GitHub Activity</h2>
-      <div id="activity-list"></div>
+      <div id="activity-list">Loading activity…</div>
     </section>
 
     <section id="repos" class="panel">
@@ -39,7 +47,7 @@
   </main>
 
   <footer>
-    <small>Built with ❤️ by LunaTWolf</small>
+    <small>Built with ❤️ by <a href="https://github.com/LunaTWolf" target="_blank" rel="noopener">LunaTWolf</a></small>
   </footer>
 
   <script src="script.js" defer></script>
