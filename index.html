@@ -1,1 +1,47 @@
-# Hi
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LunaTWolf — Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <img id="avatar" alt="avatar" />
+    <div class="intro">
+      <h1 id="name">LunaTWolf</h1>
+      <p id="bio">Frontend developer, open-source tinkerer.</p>
+      <div id="social" class="social-links"></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects" class="panel">
+      <h2>Current Projects</h2>
+      <ul id="current-projects" class="cards"></ul>
+    </section>
+
+    <section id="previous" class="panel">
+      <h2>Previous Work</h2>
+      <ul id="previous-work" class="cards"></ul>
+    </section>
+
+    <section id="github-activity" class="panel">
+      <h2>GitHub Activity</h2>
+      <div id="activity-list"></div>
+    </section>
+
+    <section id="repos" class="panel">
+      <h2>Recent GitHub Repos</h2>
+      <ul id="repo-list" class="cards"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Built with ❤️ by LunaTWolf</small>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
