@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Personal Website",
+    "description": "This profile site (static).",
+    "link": "/",
+    "tags": ["html", "css", "js"]
+  },
+  {
+    "title": "Open Source Tool",
+    "description": "A helpful CLI tool for dev workflows.",
+    "link": "https://github.com/LunaTWolf/some-tool",
+    "tags": ["node", "cli"]
+  }
+]
