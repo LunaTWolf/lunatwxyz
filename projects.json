@@ -1,14 +1,14 @@
 [
   {
-    "title": "Personal Website",
-    "description": "This profile site (static).",
-    "link": "/",
+    "title": "LunaTW.XYZ",
+    "description": "This profile site.",
+    "link": "https://github.com/LunaTWolf/lunatwxyz/",
     "tags": ["html", "css", "js"]
   },
   {
-    "title": "Open Source Tool",
-    "description": "A helpful CLI tool for dev workflows.",
-    "link": "https://github.com/LunaTWolf/some-tool",
-    "tags": ["node", "cli"]
+    "title": "LTW's Server Status Site",
+    "description": "Easy to set up & use server & status uptime site.",
+    "link": "https://github.com/LunaTWolf/ltws-server-uptime",
+    "tags": ["nodejs", "html", "css"]
   }
 ]
