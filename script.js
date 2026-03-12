@@ -44,14 +44,29 @@ function loadJSON(path) {
 }
 
 function renderSocialLinks(user) {
-  // minimal social links — expand as you like
-  const container = document.getElementById('social');
-  const links = [
-    { name: 'GitHub', url: `https://github.com/${username}` },
-    ...(user.blog ? [{ name: 'Website', url: user.blog }] : []),
-    ...(user.twitter_username ? [{ name: 'Twitter', url: `https://twitter.com/${user.twitter_username}` }] : [])
-  ];
-  container.innerHTML = links.map(l => `<a href="${l.url}" target="_blank" rel="noopener">${l.name}</a>`).join(' ');
+  const container = document.getElementById("social");
+
+  const links = [];
+
+  // custom links
+  if (user.social1) links.push(user.social1);
+  if (user.social2) links.push(user.social2);
+  if (user.social3) links.push(user.social3);
+  if (user.social4) links.push(user.social4);
+
+  // GitHub
+  if (user.login) {
+    links.push(`https://github.com/${user.login}`);
+  }
+
+  // Website (GitHub profile blog field)
+  if (user.blog) {
+    links.push(user.blog);
+  }
+
+  container.innerHTML = links
+    .map(url => `<a href="${url}" target="_blank" rel="noopener">${url}</a>`)
+    .join("<br>");
 }
 
 function renderProjects(list) {
