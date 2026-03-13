@@ -1,5 +1,11 @@
 [
   {
+    "title": "TSWModManager",
+    "description": "Mod Manager for Train Sim World 6",
+    "link": "https://github.com/LunaTWolf/lunatwxyz/",
+    "tags": ["python"]
+  },
+  {
     "title": "LunaTW.XYZ",
     "description": "This profile site.",
     "link": "https://github.com/LunaTWolf/lunatwxyz/",
